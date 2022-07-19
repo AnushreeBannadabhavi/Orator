@@ -31,8 +31,9 @@ PubSpStart::PubSpStart(QWidget *parent, bool isRecord) :
     m_recordingSession->setCamera(m_camera);
     m_recordingSession->setRecorder(&m_recorder);
     m_recorder.setQuality(QMediaRecorder::HighQuality);
-    //m_recorder.setOutputLocation(QUrl::fromLocalFile("D:/UBC_Coursework/Summer/SpeakingSimulator/Recordings/test.mp4"));
-    m_recorder.setOutputLocation(QUrl::fromLocalFile("C:/work/QT/InterviewVideos/Recordings/test.mp4"));
+    m_recorder.setOutputLocation(QUrl::fromLocalFile("D:/UBC_Coursework/Summer/SpeakingSimulator/Recordings/test.mp4"));
+    //m_recorder.setOutputLocation(QUrl::fromLocalFile("C:/work/QT/InterviewVideos/Recordings/test.mp4"));
+    ui->label->setStyleSheet("QLabel { background-color : black; color : white; }");
 }
 
 PubSpStart::~PubSpStart()

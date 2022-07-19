@@ -7,6 +7,10 @@ InterviewOptions::InterviewOptions(QWidget *parent) :
     ui(new Ui::InterviewOptions)
 {
     ui->setupUi(this);
+    //ui->label->setStyleSheet("QLabel { background-color : black; color : white; }");
+    ui->radioButtonEasy->setStyleSheet("QRadioButton { background-color : black; color : white; }");
+    ui->radioButtonHard->setStyleSheet("QRadioButton { background-color : black; color : white; }");
+    ui->radioButtonMedium->setStyleSheet("QRadioButton { background-color : black; color : white; }");
 }
 
 InterviewOptions::~InterviewOptions()

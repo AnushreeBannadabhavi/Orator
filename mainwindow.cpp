@@ -13,6 +13,10 @@ MainWindow::MainWindow(QWidget *parent)
     m_takeImageButton = new QPushButton("Take Image");
     m_audioInput.reset(new QAudioInput);
     m_captureSession.setAudioInput(m_audioInput.get());
+    ui->textEditName->setTextColor( QColor( "white" ) );
+    ui->textEditEmail->setTextColor( QColor( "white" ) );
+    ui->label->setStyleSheet("QLabel { background-color : black; color : white; }");
+    ui->label_2->setStyleSheet("QLabel { background-color : black; color : white; }");
 }
 
 MainWindow::~MainWindow()

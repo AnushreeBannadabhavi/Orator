@@ -12,6 +12,7 @@ PromptScreen::PromptScreen(QWidget *parent) :
     std::mt19937 rng(rd());
     std::uniform_int_distribution<int> uni(0,prompts.size()-1);
     ui->label->setText(prompts[uni(rng)]);
+    ui->label->setStyleSheet("QLabel { background-color : black; color : white; }");
 }
 
 PromptScreen::~PromptScreen()

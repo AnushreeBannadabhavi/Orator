@@ -6,6 +6,8 @@ PracticeOptions::PracticeOptions(QWidget *parent) :
     ui(new Ui::PracticeOptions)
 {
     ui->setupUi(this);
+    ui->radioButtonInt->setStyleSheet("QRadioButton { background-color : black; color : white; }");
+    ui->radioButtonPubSp->setStyleSheet("QRadioButton { background-color : black; color : white; }");
 }
 
 PracticeOptions::~PracticeOptions()

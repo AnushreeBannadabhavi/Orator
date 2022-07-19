@@ -23,7 +23,6 @@ private:
     Ui::PromptScreen *ui;
     std::vector<QString> prompts = {
         "In what situation is lying a good idea?",
-        "Academic Scores not a good measure of intelligence",
         "Ignorance is bliss",
         "The world is a smaller place these days",
         "If I ruled the world..."

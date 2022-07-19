@@ -23,14 +23,19 @@
       <height>411</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">
+    background-color: rgb(0, 0, 0);
+</string>
+    </property>
    </widget>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>320</x>
-      <y>200</y>
-      <width>201</width>
-      <height>91</height>
+      <x>330</x>
+      <y>230</y>
+      <width>181</width>
+      <height>101</height>
      </rect>
     </property>
     <property name="font">
@@ -40,7 +45,7 @@
      </font>
     </property>
     <property name="text">
-     <string>0:00</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#ebebeb;&quot;&gt;0:00&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButtonStartStop">

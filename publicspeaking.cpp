@@ -6,6 +6,9 @@ PublicSpeaking::PublicSpeaking(QWidget *parent) :
     ui(new Ui::PublicSpeaking)
 {
     ui->setupUi(this);
+    ui->radioButtonAudi->setStyleSheet("QRadioButton { background-color : black; color : white; }");
+    ui->radioButtonCC->setStyleSheet("QRadioButton { background-color : black; color : white; }");
+    ui->radioButtonClass->setStyleSheet("QRadioButton { background-color : black; color : white; }");
 }
 
 PublicSpeaking::~PublicSpeaking()

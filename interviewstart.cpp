@@ -20,8 +20,8 @@ InterviewStart::InterviewStart(QWidget *parent, bool isRecord) :
     connect(m_timer, &QTimer::timeout, this, &InterviewStart::updateTime);
     ui->label->setText(m_time.toString("m:ss"));
     chooseInterviewQuestions();
-    //m_videoFilePath = "D:/UBC_Coursework/Summer/SpeakingSimulator/InterviewVideos/";
-    m_videoFilePath = "C:/work/QT/InterviewVideos/";
+    m_videoFilePath = "D:/UBC_Coursework/Summer/SpeakingSimulator/InterviewVideos/";
+    //m_videoFilePath = "C:/work/QT/InterviewVideos/";
     m_player->setVideoOutput(m_videoWidget);
     m_player->setAudioOutput(m_audioOutput);
     m_audioOutput->setVolume(100);
@@ -39,10 +39,11 @@ InterviewStart::InterviewStart(QWidget *parent, bool isRecord) :
     m_recordingSession->setCamera(m_camera);
     m_recordingSession->setRecorder(&m_recorder);
     m_recorder.setQuality(QMediaRecorder::HighQuality);
-    //m_recorder.setOutputLocation(QUrl::fromLocalFile("D:/UBC_Coursework/Summer/SpeakingSimulator/Recordings/testInterview.mp4"));
-    m_recorder.setOutputLocation(QUrl::fromLocalFile("C:/work/QT/InterviewVideos/Recordings/testInterview.mp4"));
+    m_recorder.setOutputLocation(QUrl::fromLocalFile("D:/UBC_Coursework/Summer/SpeakingSimulator/Recordings/testInterview.mp4"));
+    //m_recorder.setOutputLocation(QUrl::fromLocalFile("C:/work/QT/InterviewVideos/Recordings/testInterview.mp4"));
 
     connect(m_player, &QMediaPlayer::mediaStatusChanged, this, &InterviewStart::statusChanged);
+    ui->label->setStyleSheet("QLabel { background-color : black; color : white; }");
 }
 
 InterviewStart::~InterviewStart()
